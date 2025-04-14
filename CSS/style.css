@@ -490,6 +490,10 @@ main .main {
       justify-content: center;
       flex-wrap: wrap;
     }
+
+    .navbar a {
+        font-size: 14px;
+    }
   
     .productos,
     .ofertas {
@@ -537,6 +541,10 @@ main .main {
   
     .options input {
       width: 100%;
+    }
+
+    .navbar a {
+        font-size: 14px;
     }
   
     .navbar ul li {

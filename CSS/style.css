@@ -456,61 +456,125 @@ main .main {
 
 /* Responsive */
 
+/* Responsive para tablets 768px */
 @media (max-width: 768px) {
+    .body {
+      grid-template-areas:
+        "header"
+        "nav"
+        "imagen"
+        "productos"
+        "ofertas"
+        "footer";
+    }
+  
     .box-header {
-        align-items: center;
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
     }
-
-    .box-header section {
-        flex-direction: column;
+  
+    .logo img {
+      margin-top: 0;
     }
-
+  
+    .options {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
     .navbar ul {
-        flex-direction: row;
-        justify-content: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-
-    .categorias-container {
-        justify-content: center;
+  
+    .productos,
+    .ofertas {
+      gap: 40px;
+      padding: 0 20px;
     }
-
+  
+    .registro-form,
+    .formulario-seccion {
+      width: 100%;
+      padding: 30px 20px;
+    }
+  
+    .imagen-centro img {
+      height: auto;
+    }
+  
     .footer-flex {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  /* Responsive para móviles 480px */
+  @media (max-width: 480px) {
     .box-header {
-        padding: 10px;
-        text-align: center;
+      padding: 10px;
     }
-
-    .box-header section,
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+  
+    .logo img {
+      width: 50px;
+      height: 50px;
     }
-
-    main {
-        grid-template-rows: auto auto;
-        padding: 10px;
+  
+    .options input {
+      width: 100%;
     }
-
-    .categorias-container,
+  
+    .navbar ul li {
+      margin: 10px;
+    }
+  
+    .categorias-items img,
+    .categoria-ofertas img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .registro-form,
+    .formulario-seccion {
+      width: 100%;
+      padding: 20px 15px;
+    }
+  
+    .titulo-principal {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .subtitulo {
+      font-size: 18px;
+    }
+  
     .footer-flex {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      padding: 10px;
     }
-
-    .categorias-items {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+  
+    .formulario,
+    .registro-form {
+      gap: 15px;
     }
-}
+  
+    .input,
+    .registro-form input[type="text"],
+    .registro-form input[type="tel"],
+    .registro-form input[type="password"] {
+      font-size: 14px;
+    }
+  
+    .boton,
+    .registro-form input[type="submit"] {
+      font-size: 15px;
+      padding: 12px;
+    }
+  }
+  
 
 
 

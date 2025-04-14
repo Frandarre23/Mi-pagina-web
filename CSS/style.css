@@ -27,6 +27,7 @@ body {
 }
 
 /* Header */
+
 .box-header {
     grid-area: header;
     display: flex;
@@ -89,6 +90,7 @@ body {
 }
 
 /* Navbar */
+
 .navbar {
     grid-area: nav;
     background: var(--footer-nav-color);
@@ -127,6 +129,7 @@ body {
 }
 
 /* Imagen centro */
+
 .imagen-centro {
     grid-area: imagen;
     margin: 0;
@@ -145,6 +148,7 @@ body {
 }
 
 /* Títulos */
+
 div h1, div h2, div h4 {
     font-family: "Oswald", sans-serif;
     text-align: center;
@@ -248,6 +252,7 @@ div h1, div h2, div h4 {
 }
 
 /* Footer */
+
 .footer-flex {
     grid-area: footer;
     font-family: "Afacad Flux", sans-serif;
@@ -282,7 +287,7 @@ div h1, div h2, div h4 {
     text-decoration: none;
 }
 
-/* estilo de politica de empresa */
+/* Estilos de politica de empresa */
 
 main .main {
     font-family: Arial, sans-serif;
@@ -450,6 +455,7 @@ main .main {
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
     .box-header {
         align-items: center;

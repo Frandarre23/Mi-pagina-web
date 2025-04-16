@@ -33,9 +33,9 @@
         </div>
 
         <div class="options">
-            <a href="./register.html" class="btn-click-anim" title="registrate"><img src="../imagenes/persona.png"
-                    alt="registrate" class="icono-header"></a>
-            <a href="../compra/carrito.html" class="btn-click-anim" title="carrito"><img src="../imagenes/carrito.png"
+            <a href="../pages/register.html" class="btn-click-anim" title="registrate"><img
+                    src="../imagenes/persona.png" alt="registrate" class="icono-header"></a>
+            <a href="#carrito" class="btn-click-anim" title="carrito"><img src="../imagenes/carrito.png"
                     alt="carrito" class="icono-header"></a>
             <input type="text" name="buscar" id="buscar">
         </div>
@@ -47,47 +47,47 @@
     <nav class="navbar">
         <ul>
             <li class="body-nav"><a href="../index.html" class="btn-click-anim">inicio</a></li>
-            <li class="body-nav"><a href="./productos.html" class="btn-click-anim">productos</a></li>
-            <li class="body-nav"><a href="./ofertas.html" class="btn-click-anim">ofertas</a></li>
-            <li class="body-nav"><a href="./contacto.html" class="btn-click-anim">contacto</a></li>
-            <li class="body-nav"><a href="./informacion.html" class="btn-click-anim">Politica de empresa</a></li>
+            <li class="body-nav"><a href="../pages/productos.html" class="btn-click-anim">productos</a></li>
+            <li class="body-nav"><a href="../pages/ofertas.html" class="btn-click-anim">ofertas</a></li>
+            <li class="body-nav"><a href="../pages/contacto.html" class="btn-click-anim">contacto</a></li>
+            <li class="body-nav"><a href="../pages/informacion.html" class="btn-click-anim">Politica de empresa</a></li>
         </ul>
     </nav>
 
+    <main>
+        <h1 class="titulo-principal">Carrito de compras</h1>
 
+        <section class="formulario-seccion">
+            <h2 class="subtitulo">Datos de contacto</h2>
+            <article>
+                <form action="" class="formulario">
+                    <label for="contacto2" class="etiqueta">Correo electrónico</label>
+                    <input type="email" name="contacto2" id="contacto2" class="input" placeholder="ejemplo@correo.com"
+                        required>
+                </form>
+            </article>
+        </section>
 
-    <h1 class="titulo-principal">Carrito de compras</h1>
+        <section class="formulario-seccion">
+            <h2 class="subtitulo">Entrega</h2>
+            <form action="./Pago.html" class="formulario">
 
-    <section class="formulario-seccion">
-        <h2 class="subtitulo">Datos de contacto</h2>
-        <article>
-            <form action="" class="formulario">
-                <label for="contacto2" class="etiqueta">Correo electrónico</label>
-                <input type="email" name="contacto2" id="contacto2" class="input" placeholder="ejemplo@correo.com"
-                    required>
+                <label for="pais" class="etiqueta">País</label>
+                <select name="pais" id="pais" class="input" required>
+                    <option value="">Seleccioná tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Chile">Chile</option>
+                </select>
+
+                <label for="codigo" class="etiqueta">Código postal</label>
+                <input type="number" name="codigo" id="codigo" class="input" placeholder="Ej: 1234" required>
+
+                <input type="submit" value="Continuar al pago" class="boton">
             </form>
-        </article>
-    </section>
-
-    <section class="formulario-seccion">
-        <h2 class="subtitulo">Entrega</h2>
-        <form action="./Pago.html" class="formulario">
-
-            <label for="pais" class="etiqueta">País</label>
-            <select name="pais" id="pais" class="input" required>
-                <option value="">Seleccioná tu país</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Brasil">Brasil</option>
-                <option value="Uruguay">Uruguay</option>
-                <option value="Chile">Chile</option>
-            </select>
-
-            <label for="codigo" class="etiqueta">Código postal</label>
-            <input type="number" name="codigo" id="codigo" class="input" placeholder="Ej: 1234" required>
-
-            <input type="submit" value="Continuar al pago" class="boton">
-        </form>
-    </section>
+        </section>
+    </main>
 
 </body>
 

@@ -55,27 +55,28 @@
         </ul>
     </nav>
 
+    <main>
+        <form action="./pages/submit.html" class="registro-form">
 
-    <form action="./pages/submit.html" class="registro-form">
+            <input type="text" name="nombre" placeholder="Nombre" required>
 
-        <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellido" placeholder="Apellido" required>
 
-        <input type="text" name="apellido" placeholder="Apellido" required>
+            <input type="tel" name="telefono" placeholder="Número de celular" required>
 
-        <input type="tel" name="telefono" placeholder="Número de celular" required>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" required>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="Contraseña" id="Contraseña" required>
 
-        <label for="contraseña">Contraseña</label>
-        <input type="password" name="Contraseña" id="Contraseña" required>
+            <label for="suscribe">Quiero recibir promociones</label>
+            <input type="checkbox" name="suscribe" id="suscribe" required>
 
-        <label for="suscribe">Quiero recibir promociones</label>
-        <input type="checkbox" name="suscribe" id="suscribe" required>
+            <input type="submit" value="Enviar">
 
-        <input type="submit" value="Enviar">
-
-    </form>
+        </form>
+    </main>
 
     <!-- footer -->
 

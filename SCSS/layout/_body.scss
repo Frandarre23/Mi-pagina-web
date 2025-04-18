@@ -1,0 +1,16 @@
+// Body
+
+body {
+    background-color: var(--body-color);
+}
+
+.body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "imagen"
+        "productos"
+        "ofertas"
+        "footer";
+}

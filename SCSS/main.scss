@@ -1,0 +1,25 @@
+// abstracts
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base
+@import "./base/reset";
+@import "./base/typography";
+
+// componenetes
+@import "./componentes/categorias";
+@import "./componentes/imagen-centro";
+@import "./componentes/ofertas";
+
+// layout
+@import "./layout/footer";
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/navbar";
+
+//pages
+@import "./pages/politica";
+@import "./pages/responsives";
+@import "./pages/registro";
+@import "./pages/carrito";
+

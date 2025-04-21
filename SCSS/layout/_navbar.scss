@@ -1,0 +1,38 @@
+// Navbar
+
+.navbar {
+    grid-area: nav;
+    background: var(--footer-nav-color);
+    padding: 10px 0;
+    height: 60px;
+  
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 10px;
+      list-style: none;
+      font-family: "Afacad Flux", sans-serif;
+  
+      li {
+        margin: 20px;
+      }
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        color: var(--seccion-title);
+        transform: scale(1.1);
+      }
+  
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+  

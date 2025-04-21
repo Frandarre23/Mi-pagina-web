@@ -1,0 +1,19 @@
+// Imagen centro
+
+.imagen-centro {
+    grid-area: imagen;
+    margin: 0;
+    padding: 0;
+  
+    .carousel {
+      margin-bottom: 0;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+  }
+  

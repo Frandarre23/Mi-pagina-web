@@ -23,7 +23,7 @@
       text-decoration: none;
       color: white;
       font-weight: bold;
-      transition: all 0.3s ease;
+      @include transition(all, 0,3s);
   
       &:hover {
         color: $seccion-title;

@@ -13,11 +13,11 @@
         align-items: center;
         text-align: center;
         margin-bottom: 90px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        @include transition(transform 0.3s ease, box-shadow 0.3s ease);
 
         &:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            @include box-shadow;
         }
 
         img {
@@ -25,11 +25,11 @@
             height: 100px;
             object-fit: cover;
             border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            @include transition(transform 0.3s ease, box-shadow 0.3s ease);
 
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                @include box-shadow;
             }
         }
     }

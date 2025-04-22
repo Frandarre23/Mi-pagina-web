@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--footer-nav-color);
+    background: $footer-nav-color;
     padding: 10px 20px;
     height: 50px;
   
@@ -25,10 +25,10 @@
       a {
         color: white;
         text-decoration: none;
-        transition: all 0.3s ease;
+        @include transition(all, 0,3s);
   
         &:hover {
-          color: var(--seccion-title);
+          color: $seccion-title;
           transform: scale(1.1);
   
           .icono-header {
@@ -52,7 +52,7 @@
       width: 24px;
       height: 24px;
       object-fit: contain;
-      transition: all 0.3s ease;
+      @include transition(all, 0,3s);
       filter: brightness(100%);
     }
   }

@@ -2,7 +2,7 @@
 
 .navbar {
     grid-area: nav;
-    background: var(--footer-nav-color);
+    background: $footer-nav-color;
     padding: 10px 0;
     height: 60px;
   
@@ -26,7 +26,7 @@
       transition: all 0.3s ease;
   
       &:hover {
-        color: var(--seccion-title);
+        color: $seccion-title;
         transform: scale(1.1);
       }
   

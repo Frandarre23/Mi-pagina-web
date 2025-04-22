@@ -474,9 +474,112 @@ main .main {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
+}
 
+
+/* Sección contacto */
+
+.contacto {
+    padding: 40px 20px;
+    background-color: white;
+    font-family: "Afacad Flux", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.contacto__titulo {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center;
+}
+  
+.contacto__formulario {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.contacto__formulario label {
+    font-weight: bold;
+    color: #333;
+}
+  
+.contacto__formulario input,
+.contacto__formulario textarea {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+  
+.contacto__formulario input:focus,
+.contacto__formulario textarea:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 8px #27ae60;
+    transform: scale(1.02);
+    outline: none;
+}
+  
+.boton {
+    padding: 14px;
+    font-size: 17px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+  
+.boton:hover {
+    background-color: #2ecc71;
+    transform: scale(1.03);
+}
+  
+.contacto__info {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+  
+.contacto__info p {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+  
+.contacto__info i {
+    color: #27ae60;
+    font-size: 18px;
+    min-width: 20px;
+}
+  
+.contacto__info a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.contacto__info a:hover {
+    text-decoration: underline;
+}
+  
 /* Responsive */
 
 /* Responsive para tablets 768px */

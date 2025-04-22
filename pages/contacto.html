@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="../CSS/style.css">
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +55,37 @@
             <li class="body-nav"><a href="./informacion.html" class="btn-click-anim">Politica de empresa</a></li>
         </ul>
     </nav>
+
+    <main>
+        <section class="contacto">
+            <h1 class="contacto__titulo">Contacto</h1>
+
+            <form class="contacto__formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required />
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+
+            <div class="contacto__info">
+                <p><i class="fas fa-envelope"></i> contacto@miempresa.com</p>
+                <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/miempresa"
+                        target="_blank">@miempresa</a></p>
+                <p><i class="fas fa-phone"></i> +54 9 11 1234 5678</p>
+                <p><i class="fab fa-facebook"></i> <a href="https://facebook.com/miempresa"
+                        target="_blank">facebook.com/miempresa</a></p>
+            </div>
+        </section>
+    </main>
 
     <!-- footer -->
 

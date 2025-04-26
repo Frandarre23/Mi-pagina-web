@@ -91,6 +91,17 @@
 
 // Responsive para móviles 480px 
 @media (max-width: 480px) {
+
+    .body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "imagen"
+            "productos"
+            "ofertas"
+            "footer";
+    }
+    
     .box-header {
         padding: 10px;
         flex-direction: row;
@@ -98,22 +109,22 @@
     }
 
     .options {
-        width: 50%;
+        width: 60%;
         flex-direction: row;
         align-items: flex-start;
-        gap: 10px;
+        gap: 5px;
     }
 
     .logo {
         img {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
         }
     }
 
     .options {
         input {
-            width: 100%;
+            width: 50%;
         }
     }
 

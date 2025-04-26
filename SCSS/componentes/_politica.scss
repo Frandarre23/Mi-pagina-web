@@ -2,7 +2,7 @@
 main {
     .main {
       font-family: Arial, sans-serif;
-      background-color: var(--body-color);
+      background-color: $body-color;
       color: black;
       line-height: 1.6;
       margin: 20px;
@@ -15,7 +15,7 @@ main {
   
       .nombre {
         font-weight: bold;
-        color: var(--nombre-colo);
+        color: $nombre-color;
       }
   
       .last-update {

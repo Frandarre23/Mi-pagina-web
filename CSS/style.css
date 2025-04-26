@@ -621,12 +621,24 @@ main .main {
         font-size: 14px;
     }
   
-    .productos,
-    .ofertas {
-      gap: 40px;
-      padding: 0 20px;
+    .productos {
+        gap: 20px;
     }
-  
+    
+    .categorias-items img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .ofertas {
+        gap: 60px;
+    }
+    
+    .categoria-ofertas img {
+        width: 100px;
+        height: 100px;
+    }
+
     .registro-form,
     .formulario-seccion {
       width: 100%;
@@ -643,7 +655,7 @@ main .main {
       text-align: center;
       gap: 20px;
     }
-  }
+}
   
   /* Responsive para móviles 480px */
   @media (max-width: 480px) {
@@ -677,10 +689,29 @@ main .main {
       margin: 10px;
     }
   
-    .categorias-items img,
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .categorias-items img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .ofertas {
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .categoria-ofertas {
+        min-height: 550px;
+    }
+
     .categoria-ofertas img {
-      width: 100px;
-      height: 100px;
+        width: 90px;
+        height: 90px;
     }
   
     .registro-form,

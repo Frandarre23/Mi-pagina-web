@@ -15,8 +15,6 @@
     .box-header {
         flex-direction: row;
         height: auto;
-        gap: 10px;
-        align-items: flex-start;
     }
 
     .logo {
@@ -27,14 +25,11 @@
 
     .options {
         flex-direction: row;
-        gap: 10px;
-        align-items: flex-start;
-        width: 40%;
     }
 
     .navbar {
         ul {
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
 
             li {
@@ -105,14 +100,10 @@
     .box-header {
         padding: 10px;
         flex-direction: row;
-        align-items: flex-start;
     }
 
     .options {
-        width: 60%;
         flex-direction: row;
-        align-items: flex-start;
-        gap: 5px;
     }
 
     .logo {
@@ -131,6 +122,12 @@
     .navbar {
         a {
             font-size: 14px;
+        }
+
+        ul{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 0;
         }
     }
 

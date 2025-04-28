@@ -188,16 +188,16 @@ body {
   height: 50px;
 }
 .box-header .logo img {
-  width: 60px;
-  height: 60px;
+  box-sizing: border-box;
+  display: block;
+  width: 50px;
+  height: 50px;
   text-decoration: none;
-  margin-top: 20px;
 }
 .box-header .options {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: "Afacad Flux", sans-serif;
 }
 .box-header .options a {
   color: white;
@@ -234,9 +234,9 @@ body {
   height: 60px;
 }
 .navbar ul {
+  padding-left: 0rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   margin-top: 10px;
   list-style: none;
   font-family: "Afacad Flux", sans-serif;
@@ -431,20 +431,15 @@ body {
   .box-header {
     flex-direction: row;
     height: auto;
-    gap: 10px;
-    align-items: flex-start;
   }
   .logo img {
     margin-top: 0;
   }
   .options {
     flex-direction: row;
-    gap: 10px;
-    align-items: flex-start;
-    width: 40%;
   }
   .navbar ul {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
   .navbar ul li {
@@ -489,13 +484,9 @@ body {
   .box-header {
     padding: 10px;
     flex-direction: row;
-    align-items: flex-start;
   }
   .options {
-    width: 60%;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 5px;
   }
   .logo img {
     width: 30px;
@@ -506,6 +497,11 @@ body {
   }
   .navbar a {
     font-size: 14px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 0;
   }
   .productos {
     flex-direction: column;

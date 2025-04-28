@@ -19,7 +19,6 @@
   
     .options {
       display: flex;
-      align-items: center;
       gap: 20px;
   
       a {
@@ -43,8 +42,9 @@
       }
   
       input {
-        padding: 5px;
+        padding: 0px;
         width: 200px;
+        height: 25px;
       }
     }
   

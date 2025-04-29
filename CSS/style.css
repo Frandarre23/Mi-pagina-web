@@ -227,34 +227,37 @@ body {
   filter: brightness(100%);
 }
 
-.navbar {
+.custom-navbar {
   grid-area: nav;
   background: #222;
   padding: 10px 0;
   height: 60px;
 }
-.navbar ul {
-  padding-left: 0rem;
+.custom-navbar .navbar-nav {
+  padding-left: 0;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
   list-style: none;
   font-family: "Afacad Flux", sans-serif;
 }
-.navbar ul li {
+.custom-navbar .navbar-nav .nav-item {
   margin: 20px;
 }
-.navbar a {
+.custom-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+.custom-navbar .nav-link {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: all 0 3s;
+  transition: all 0.3s ease;
 }
-.navbar a:hover {
+.custom-navbar .nav-link:hover {
   color: red;
   transform: scale(1.1);
 }
-.navbar a:active {
+.custom-navbar .nav-link:active {
   transform: scale(0.95);
 }
 
@@ -483,15 +486,16 @@ body {
   .options {
     flex-direction: row;
   }
-  .navbar ul {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
   }
-  .navbar ul li {
-    margin: 10px;
+  .navbar-nav .nav-item {
+    margin: 10px 0;
   }
-  .navbar a {
-    font-size: 14px;
+  .navbar-collapse {
+    width: 100%;
   }
   .productos {
     gap: 20px;
@@ -540,13 +544,14 @@ body {
   .options input {
     width: 50%;
   }
-  .navbar a {
-    font-size: 14px;
+  .navbar-nav {
+    padding-left: 10px;
   }
-  .navbar ul {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-left: 0;
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+  .nav-link {
+    font-size: 1rem;
   }
   .productos {
     flex-direction: column;

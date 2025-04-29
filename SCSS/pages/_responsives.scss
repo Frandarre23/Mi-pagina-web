@@ -27,19 +27,18 @@
         flex-direction: row;
     }
 
-    .navbar {
-        ul {
-            justify-content: flex-start;
-            flex-wrap: wrap;
-
-            li {
-                margin: 10px;
-            }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+  
+    .nav-item {
+          margin: 10px 0;
         }
-
-        a {
-            font-size: 14px;
-        }
+    }
+  
+    .navbar-collapse {
+        width: 100%;
     }
 
     .productos {
@@ -119,16 +118,16 @@
         }
     }
 
-    .navbar {
-        a {
-            font-size: 14px;
+    .navbar-nav {
+        padding-left: 10px;
+  
+        .nav-item {
+          margin: 8px 0;
         }
-
-        ul{
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            padding-left: 0;
-        }
+    }
+  
+    .nav-link {
+        font-size: 1rem;
     }
 
     .productos {

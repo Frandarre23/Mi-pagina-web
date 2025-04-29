@@ -1,32 +1,29 @@
 // Navbar
-.custom-navbar {
+
+.navbar {
   grid-area: nav;
   background: $footer-nav-color;
   padding: 10px 0;
   height: 60px;
 
-  .navbar-nav {
-    padding-left: 0;
+  ul {
+    padding-left: 0rem;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     list-style: none;
     font-family: "Afacad Flux", sans-serif;
 
-    .nav-item {
+    li {
       margin: 20px;
     }
   }
 
-  .navbar-toggler-icon {
-      filter: invert(1);
-  }
-
-  .nav-link {
+  a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    @include transition(all, 0.3s);
+    @include transition(all, 0,3s);
 
     &:hover {
       color: $seccion-title;

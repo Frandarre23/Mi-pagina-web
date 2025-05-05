@@ -1,29 +1,34 @@
 // Navbar
 
-.navbar {
+.custom-navbar {
   grid-area: nav;
-  background: $footer-nav-color;
-  padding: 10px 0;
-  height: 60px;
+  background-color: $footer-nav-color;
+  padding: 10px;
+  position: relative;
 
-  ul {
-    padding-left: 0rem;
+  .navbar-nav {
+    padding-left: 0;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     list-style: none;
     font-family: "Afacad Flux", sans-serif;
 
-    li {
+    .nav-item {
       margin: 20px;
     }
   }
 
-  a {
+  .navbar-toggler {
+    background-color: white;
+    color: black;
+  }
+
+  .nav-link {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    @include transition(all, 0,3s);
+    @include transition(all, 0.3s);
 
     &:hover {
       color: $seccion-title;
@@ -35,5 +40,4 @@
     }
   }
 }
-
   

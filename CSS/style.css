@@ -132,10 +132,21 @@ div h4 {
 }
 .main .section {
   margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .main .section .section-title {
   color: red;
   margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+}
+.main .section p {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
 .footer-flex {
@@ -243,6 +254,7 @@ body {
 }
 .custom-navbar .navbar-nav .nav-item {
   margin: 10px;
+  font-size: 16px;
 }
 .custom-navbar .navbar-toggler {
   background-color: white;

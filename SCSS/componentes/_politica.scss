@@ -25,10 +25,19 @@
 
   .section {
     margin-bottom: 30px;
-
+    @include card-style;
+  
     .section-title {
-      color: red;
+      color: $seccion-title;
       margin-bottom: 10px;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-family: "Roboto", sans-serif;
+      color: #333;
+      line-height: 1.6;
     }
   }
 }

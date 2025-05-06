@@ -38,3 +38,12 @@
 @mixin box-shadow($horizontal: 0, $vertical: 4px, $blur: 12px, $color: rgba(0, 0, 0, 0.1)) {
     box-shadow: $horizontal $vertical $blur $color;
   }
+
+// Mixin para tarjetas 
+
+@mixin card-style($color: #fff, $padding: 20px, $border-radius: 12px, $shadow: 0 4px 8px rgba(0, 0, 0, 0.1)) {
+  background-color: $color;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+}

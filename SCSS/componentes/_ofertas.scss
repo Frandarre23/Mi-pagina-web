@@ -45,3 +45,26 @@
         color: black;
     }
 }
+
+.offer-deadline {
+  background: linear-gradient(135deg, #ff3300a1, #f44336);
+  color: #000000;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  @include box-shadow(0, 10px, 20px, rgba(0, 0, 0, 0.2));
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+
+    span {
+      font-size: 1.6rem;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,59 +1,63 @@
 // Header
 
 .box-header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: $footer-nav-color;
-    padding: 10px 20px;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $footer-nav-color;
+  padding: 10px 20px;
+  height: 50px;
+
+  .logo img {
+    box-sizing: border-box;
+    display: block;
+    width: 50px;
     height: 50px;
-  
-    .logo img {
-      box-sizing: border-box;
-      display: block;
-      width: 50px;
-      height: 50px;
-      text-decoration: none;
-    }
-  
-    .options {
-      display: flex;
-      gap: 20px;
-  
-      a {
-        color: white;
-        text-decoration: none;
-        @include transition(all, 0,3s);
-  
-        &:hover {
-          color: $seccion-title;
-          transform: scale(1.1);
-  
-          .icono-header {
-            transform: scale(1.1);
-            filter: brightness(120%);
-          }
-        }
-  
-        &:active {
-          transform: scale(0.95);
-        }
-      }
-  
-      input {
-        padding: 0px;
-        width: 200px;
-        height: 25px;
-      }
-    }
-  
-    .icono-header {
-      width: 24px;
-      height: 24px;
-      object-fit: contain;
-      @include transition(all, 0,3s);
-      filter: brightness(100%);
-    }
+    text-decoration: none;
   }
-  
+
+  .options {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      @include transition(all, 0, 3s);
+
+      &:hover {
+        color: $seccion-title;
+        transform: scale(1.1);
+
+        .icono-header {
+          transform: scale(1.1);
+          filter: brightness(120%);
+        }
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+
+    input {
+      padding: 0px;
+      height: 25px;
+
+      &:hover {
+        color: $seccion-title;
+        transform: scale(1.1);
+      }
+    }
+
+  }
+
+  .icono-header {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    @include transition(all, 0, 3s);
+    filter: brightness(100%);
+  }
+}

@@ -79,6 +79,7 @@ div h4 {
 }
 .ofertas .categoria-ofertas {
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -116,7 +117,7 @@ div h4 {
   padding: 1.5rem 1rem;
   border-radius: 1rem;
   text-align: center;
-  max-width: 500px;
+  max-width: 100%;
   margin: 1.5rem auto;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -129,6 +130,65 @@ div h4 {
   font-size: 1.6rem;
   text-decoration: underline;
   font-weight: 700;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.testimonials__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+.testimonials__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.testimonials .testimonial {
+  background-color: white;
+  border-left: 5px solid #27ae60;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s 0.3s ease;
+}
+.testimonials .testimonial:hover {
+  transform: scale(1.02);
+}
+.testimonials .testimonial__text {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.testimonials .testimonial__author {
+  display: flex;
+  align-items: center;
+}
+.testimonials .testimonial__author img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 60px;
+  height: 60px;
+}
+.testimonials .testimonial__author__name {
+  font-weight: bold;
+  color: #222;
+}
+.testimonials .testimonial__author__info {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #888;
 }
 
 .main {
@@ -248,8 +308,11 @@ body {
 }
 .box-header .options input {
   padding: 0px;
-  width: 200px;
   height: 25px;
+}
+.box-header .options input:hover {
+  color: red;
+  transform: scale(1.1);
 }
 .box-header .icono-header {
   width: 24px;
@@ -268,7 +331,6 @@ body {
 .custom-navbar .navbar-nav {
   padding-left: 0;
   display: flex;
-  flex-direction: row;
   margin-top: 10px;
   list-style: none;
   font-family: "Afacad Flux", sans-serif;

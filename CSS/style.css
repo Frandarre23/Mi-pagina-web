@@ -112,7 +112,7 @@ div h4 {
 }
 
 .offer-deadline {
-  background: linear-gradient(135deg, rgba(255, 51, 0, 0.631372549), #f44336);
+  background: linear-gradient(135deg, #eb4a00, #f44336);
   color: #000000;
   padding: 1.5rem 1rem;
   border-radius: 1rem;
@@ -160,7 +160,6 @@ div h4 {
   max-width: 350px;
   width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s 0.3s ease;
 }
 .testimonials .testimonial:hover {
   transform: scale(1.02);
@@ -226,7 +225,7 @@ div h4 {
 }
 .main .section p {
   font-family: "Roboto", sans-serif;
-  color: #333;
+  color: black;
   line-height: 1.6;
 }
 
@@ -506,7 +505,7 @@ body {
 }
 .contacto__formulario label {
   font-weight: bold;
-  color: #333;
+  color: black;
 }
 .contacto__formulario input,
 .contacto__formulario textarea {

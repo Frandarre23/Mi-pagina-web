@@ -48,7 +48,7 @@
 }
 
 .offer-deadline {
-  background: linear-gradient(135deg, #ff3300a1, #f44336);
+  background: linear-gradient(135deg, #eb4a00, #f44336);
   color: #000000;
   padding: 1.5rem 1rem;
   border-radius: 1rem;
@@ -100,7 +100,6 @@
     max-width: 350px;
     width: 100%;
     @include box-shadow(0, 4px, 6px, rgba(0, 0, 0, 0.5));
-    @include transition(transform 0.3s);
 
     &:hover {
       transform: scale(1.02);

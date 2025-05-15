@@ -7,6 +7,7 @@
   line-height: 1.6;
   margin: 20px;
   padding: 20px;
+  @include box-shadow(0, 10px, 20px, rgba(0, 0, 0, 0.2));
 
   .main-title {
     text-align: center;

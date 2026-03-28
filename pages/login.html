@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logueate en AthleticLife | Crea tu Cuenta y Empezá tu Experiencia Deportiva</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Toastify JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <!-- header -->
+
+    <header class="box-header">
+
+        <div class="logo">
+            <a href="../index.html"><img src="../imagenes/img.jpg" alt="fitness"></a>
+        </div>
+
+        <div class="options">
+            <a href="#register" class="btn-click-anim" title="registrate"><img src="../imagenes/persona.png"
+                    alt="registrate" class="icono-header"></a>
+            <a href="../compra/carrito.html" class="btn-click-anim" title="carrito"><img src="../imagenes/carrito.png"
+                    alt="carrito" class="icono-header"></a>
+            <input type="text" name="buscar" id="buscar">
+        </div>
+
+    </header>
+
+    <!-- nav -->
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./informacion.html">Política de empresa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <h2>Iniciar Sesión</h2>
+        <form class="registro-form">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="loginEmail" required>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="Contraseña" id="loginPassword" required>
+
+            <button class="boton" id="btnLogin">Ingresar</button>
+    </main>
+    <!-- footer -->
+
+    <footer class="footer-flex">
+        <section class="footer-seccion">
+            <h3><strong>Categorias:</strong></h3>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">inicio</a></li>
+                        <li><a href="./productos.html">productos</a></li>
+                        <li><a href="./ofertas.html">ofertas</a></li>
+                        <li><a href="./contacto.html">contacto</a></li>
+                        <li><a href="./informacion.html">mas informacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="footer-seccion">
+            <h3><strong>Contacto:</strong></h3>
+            <ol>
+                <li>Atlethiclife@gmail.com</li>
+                <li>+54 9 11 45678090</li>
+                <li>Atlethiclife en ig</li>
+            </ol>
+        </section>
+        <section class="footer-seccion">
+            <h3><strong>Metodos de pago:</strong></h3><img src="../imagenes/pagos.png" alt="formas de pago">
+        </section>
+        <section class="footer-seccion">
+            <h3><strong>Ubicanos:</strong></h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d839072.7432724056!2d-58.419842!3d-34.764965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd261abf8fb75%3A0xd3b4119f62723032!2sLomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1774732456133!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </iframe> <!-- mapa -->
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="../Js/storage.js"></script>
+    <script src="../Js/logIn.js"></script>
+    <!-- toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

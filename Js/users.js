@@ -2,12 +2,18 @@ let btnRegistro = document.querySelector("#btnRegistro");
 let email = document.querySelector("#email")
 let password = document.querySelector("#password")
 
-class usuario {
+class Usuario {
     constructor(email, password) {
         this.email = email
         this.password = password
         this.carrito = []
     }
+}
+
+let usuarioActual = obtenerUsuarioActual();
+
+if (usuarioActual) {
+    window.location.href = "../index.html";
 }
 
 
@@ -28,7 +34,7 @@ if (btnRegistro) {
             alert("Este usuario ya existe en laa pagina")
             return;
         } else {
-            let nuevoUser = new usuario(email.value, password.value);
+            let nuevoUser = new Usuario(email.value, password.value);
 
             usuarios.push(nuevoUser);
             guardarUser(usuarios);
@@ -41,16 +47,14 @@ if (btnRegistro) {
                 position: "right",
                 stopOnFocus: true,
                 style: {
-                    background:  "#27ae60",
-                }}).showToast();
+                    background: "#27ae60",
+                }
+            }).showToast();
+
+            setTimeout(() => {
+                window.location.href = "login.html";
+            }, 1500)
         }
 
     })
 }
-
-let usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
-
-if(usuarioActual){
-    console.log("Bienvenido", usuarioActual.email);
-}
-

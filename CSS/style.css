@@ -321,6 +321,24 @@ div h4 {
   color: red;
   transform: scale(1.1);
 }
+.box-header .options .button {
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.box-header .options .button:hover {
+  background: #222;
+  color: #fff;
+}
+.box-header .options .nombreUser {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
 .box-header .icono-header {
   width: 24px;
   height: 24px;

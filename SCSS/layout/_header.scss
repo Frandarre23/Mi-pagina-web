@@ -52,6 +52,27 @@
       }
     }
 
+    .button {
+      padding: 5px 15px;
+      border-radius: 8px;
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: $footer-nav-color;
+        color: #fff;
+      }
+    }
+
+    .nombreUser {
+      font-family: "Oswald", sans-serif;
+      color: white;
+    }
+
   }
 
   .icono-header {

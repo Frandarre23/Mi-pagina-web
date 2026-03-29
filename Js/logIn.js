@@ -2,6 +2,7 @@ let btnLogIn = document.querySelector("#btnLogin")
 let loginEmail = document.querySelector("#loginEmail");
 let loginPassword = document.querySelector("#loginPassword");
 
+// login
 if (btnLogIn) {
     btnLogIn.addEventListener("click", (e) => {
 
@@ -18,16 +19,25 @@ if (btnLogIn) {
 
         if (usuarioEncontrado) {
             alert("Login correcto");
-            localStorage.setItem("usuarioActual", JSON.stringify(usuarioEncontrado));
-            window.location.href = "index.html";
+            guardarUsuarioActual(usuarioEncontrado);
+            window.location.href = "../index.html";
         } else {
             alert("Datos incorrectos");
         }
     });
 }
 
-let usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
+// sesion
+let usuarioActual = obtenerUsuarioActual();
 
+// mostrar usuario logueado
 if(usuarioActual){
-    console.log("Bienvenido", usuarioActual.email);
+    nombreLogIn.textContent = "Bienvenido " + usuarioActual.email;
+}
+
+// verificar sesión
+function verificarSesion() {
+    if (!usuarioActual) {
+        window.location.href = "login.html";
+    }
 }

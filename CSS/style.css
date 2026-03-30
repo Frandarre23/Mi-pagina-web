@@ -271,7 +271,7 @@ div h4 {
   height: 100px;
 }
 
-.body {
+body {
   display: grid;
   grid-template-areas: "header" "nav" "imagen" "productos" "ofertas" "footer";
 }
@@ -609,12 +609,19 @@ div h4 {
 }
 
 @media (max-width: 768px) {
-  .body {
+  body {
     grid-template-areas: "header" "nav" "imagen" "productos" "ofertas" "footer";
   }
   .box-header {
     flex-direction: row;
     height: auto;
+  }
+  .button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  .nombreUser {
+    font-size: 14px;
   }
   .logo img {
     margin-top: 0;
@@ -664,19 +671,33 @@ div h4 {
   }
 }
 @media (max-width: 480px) {
-  .body {
+  body {
     grid-template-areas: "header" "nav" "imagen" "productos" "ofertas" "footer";
   }
   .box-header {
-    padding: 10px;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
   }
   .options {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .button {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+  .nombreUser {
+    font-size: 12px;
+    text-align: center;
   }
   .logo img {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28pxpx;
   }
   .navbar-nav {
     flex-direction: column;

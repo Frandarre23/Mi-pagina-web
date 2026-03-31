@@ -25,6 +25,21 @@ div h4 {
   flex-wrap: wrap;
 }
 
+.btn-agregar {
+  padding: 6px 12px;
+  border: 1px solid #ba181b;
+  background: transparent;
+  color: #ba181b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+.btn-agregar:hover {
+  background: #ba181b;
+  color: #fff;
+}
+
 .categorias-items {
   display: flex;
   flex-direction: column;
@@ -230,6 +245,102 @@ div h4 {
   font-family: "Roboto", sans-serif;
   color: black;
   line-height: 1.6;
+}
+
+#carritocontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.item-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.item-carrito:hover {
+  transform: translateY(-2px);
+}
+.item-carrito p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cantidad span {
+  min-width: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+.cantidad button {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #ba181b;
+  background: transparent;
+  color: #ba181b;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.cantidad button:hover {
+  background: #ba181b;
+  color: #fff;
+}
+
+.btn-eliminar {
+  border: 1px solid #e5383b;
+  background: transparent;
+  color: #e5383b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-eliminar:hover {
+  background: #a4161a;
+  color: #fff;
+}
+
+#total {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  color: #161a1d;
+}
+
+#btnVaciar {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 17px;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #a4161a;
+}
+#btnVaciar:hover {
+  transform: scale(1.03);
+  background-color: #27ae60;
+}
+#btnVaciar:active {
+  transform: scale(0.95);
+}
+#btnVaciar:hover {
+  background: #a4161a;
 }
 
 .footer-flex {

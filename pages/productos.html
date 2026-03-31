@@ -24,6 +24,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Toastify JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 
@@ -50,30 +52,30 @@
 
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="body-nav nav-item">
-                <a class="nav-link btn-click-anim" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="body-nav nav-item">
-                <a class="nav-link btn-click-anim" href="./productos.html">Productos</a>
-              </li>
-              <li class="body-nav nav-item">
-                <a class="nav-link btn-click-anim" href="./ofertas.html">Ofertas</a>
-              </li>
-              <li class="body-nav nav-item">
-                <a class="nav-link btn-click-anim" href="./contacto.html">Contacto</a>
-              </li>
-              <li class="body-nav nav-item">
-                <a class="nav-link btn-click-anim" href="./informacion.html">Política de empresa</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="body-nav nav-item">
+                        <a class="nav-link btn-click-anim" href="./informacion.html">Política de empresa</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -87,48 +89,96 @@
                 <h3>Suplementacion</h3>
                 <img src="../imagenes/Productos/whey-protein.webp" alt="proteina">
                 <p>$33.000</p>
+                <button class="btn-agregar" data-nombre="Whey Protein" data-precio="33000">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/creatine.webp" alt="creatina">
                 <p>$20.000</p>
+                <button class="btn-agregar" data-nombre="Creatina" data-precio="20000">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/omega-3.webp" alt="omega 3">
                 <p>$40.000</p>
+                <button class="btn-agregar" data-nombre="Omega3" data-precio="40000">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/magnesio.webp" alt="magnesio">
                 <p>$50.000</p>
+                <button class="btn-agregar" data-nombre="Magnesio" data-precio="50000">
+                    Agregar
+                </button>
             </article>
             <article class="categoria-ofertas">
                 <h3>Musculosas</h3>
                 <img src="../imagenes/Productos/musculosa-abierta.webp" alt="abiertas">
                 <p>$27.999,00</p>
+                <button class="btn-agregar" data-nombre="Musculosa abierta" data-precio="27999">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/musculosa-cerrada.webp" alt="cerradas">
                 <p>$29.999,00</p>
+                <button class="btn-agregar" data-nombre="Musculosa cerrada" data-precio="29999">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/musculosa-sin-costura.webp" alt="sin costura">
                 <p>$28.999,00</p>
+                <button class="btn-agregar" data-nombre="Musculosa sin costura" data-precio="28999">
+                    Agregar
+                </button>
             </article>
             <article class="categoria-ofertas">
                 <h3>Remeras</h3>
                 <img src="../imagenes/Productos/remerones.webp" alt="remerones">
                 <p>$34.999,00</p>
+                <button class="btn-agregar" data-nombre="Remeras oversize" data-precio="34999">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/compresion.webp" alt="remeras compresion">
-                <p>$28.999,00</p>
+                <p>$30.000,00</p>
+                <button class="btn-agregar" data-nombre="Remeras compresion" data-precio="30000">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/basica.webp" alt="basicas">
                 <p>$20.999,00</p>
+                <button class="btn-agregar" data-nombre="Remeras basicas" data-precio="20999">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/boxy.webp" alt="boxy">
                 <p>$44.999,00</p>
+                <button class="btn-agregar" data-nombre="Remeras boxy" data-precio="44999">
+                    Agregar
+                </button>
             </article>
             <article class="categoria-ofertas">
                 <h3>Buzos</h3>
                 <img src="../imagenes/Productos/buzo-sin-capucha.webp" alt="oversize sin capucha">
-                <p>sin stock</p>
+                <p>54.999,00</p>
+                <button class="btn-agregar" data-nombre="Buzo oversize sin capucha" data-precio="54999">
+                    Agregar
+                </button>
                 <img src="../imagenes/Productos/buzo-capucha.webp" alt="oversize con capucha">
                 <p>$64.999,00</p>
+                <button class="btn-agregar" data-nombre="Buzo oversize con capucha" data-precio="64999">
+                    Agregar
+                </button>
             </article>
             <article class="categoria-ofertas">
                 <h3>Medias</h3>
-                <img src="../imagenes/mediasbasicas.png" alt="medias basicas">
+                <img src="../imagenes/Mediasbasicas.webp" alt="medias basicas">
                 <p>$15.999,00</p>
-                <img src="../imagenes/mediasinvisibles.png" alt="medias invisibles">
+                <button class="btn-agregar" data-nombre="Medias basicas" data-precio="15999">
+                    Agregar
+                </button>
+                <img src="../imagenes/Mediasinvisibles.webp" alt="medias invisibles">
                 <p>$13.999,00</p>
-                <img src="../imagenes/mediasaltas.png" alt="medias 3/4">
+                <button class="btn-agregar" data-nombre="Medias invisibles" data-precio="13999">
+                    Agregar
+                </button>
+                <img src="../imagenes/Mediasaltas.webp" alt="medias 3/4">
                 <p>17.999,00</p>
+                <button class="btn-agregar" data-nombre="Medias 3/4" data-precio="17999">
+                    Agregar
+                </button>
             </article>
         </section>
     </main>
@@ -142,7 +192,7 @@
                 <nav>
                     <ul>
                         <li><a href="../index.html">inicio</a></li>
-                        <li><a href="./pages/productos.html">productos</a></li> 
+                        <li><a href="./pages/productos.html">productos</a></li>
                         <li><a href="./pages/ofertas.html">ofertas</a></li>
                         <li><a href="./pages/contacto.html">contacto</a></li>
                         <li><a href="./pages/informacion.html">mas informacion</a></li>
@@ -174,7 +224,11 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JS -->
+    <script src="../Js/storage.js"></script>
+    <script src="../Js/products.js"></script>
+    <script src="../Js/chart.js"></script>
 </body>
-
 </html>

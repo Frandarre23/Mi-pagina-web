@@ -406,6 +406,8 @@ body {
 .box-header .options {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .box-header .options a {
   color: white;
@@ -799,14 +801,11 @@ body {
     gap: 5px;
   }
   .options {
-    display: flex;
     align-items: center;
-    gap: 5px;
-    flex-wrap: wrap;
   }
   .button {
-    padding: 5px 8px;
-    font-size: 11px;
+    padding: 4px 6px;
+    font-size: 10px;
   }
   .nombreUser {
     font-size: 12px;
@@ -814,7 +813,7 @@ body {
   }
   .logo img {
     width: 28px;
-    height: 28pxpx;
+    height: 28px;
   }
   .navbar-nav {
     flex-direction: column;

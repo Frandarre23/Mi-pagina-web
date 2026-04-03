@@ -119,20 +119,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap; // 🔥 CLAVE
+        flex-wrap: wrap;
         gap: 5px;
     }
 
     .options {
-        display: flex;
         align-items: center;
-        gap: 5px;
-        flex-wrap: wrap; // 🔥 CLAVE
     }
 
     .button {
-        padding: 5px 8px;
-        font-size: 11px;
+        padding: 4px 6px;
+        font-size: 10px;
     }
 
     .nombreUser {
@@ -143,7 +140,7 @@
     .logo {
         img {
             width: 28px;
-            height: 28pxpx;
+            height: 28px;
         }
     }
 

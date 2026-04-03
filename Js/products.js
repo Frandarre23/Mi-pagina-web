@@ -1,3 +1,4 @@
+// Productos
 document.addEventListener("click", (e) => {
 
     if (e.target.classList.contains("btn-agregar")) {
@@ -56,6 +57,8 @@ function renderCategoria(productos, categoria, selector){
 
 cargarProductos();
 
+
+// Ofertas
 if (!localStorage.getItem("promoMostrada")) {
 
     Swal.fire({

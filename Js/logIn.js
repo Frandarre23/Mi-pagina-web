@@ -8,8 +8,33 @@ if (btnLogIn) {
 
         e.preventDefault();
 
-        if (!loginEmail.value || !loginPassword.value) {
-            alert("Completa todos los campos");
+        if (!loginEmail.value.includes("@")) {
+            Toastify({
+                text: "Email invalido",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
+            return;
+        }
+
+        if (loginPassword.value.length < 7) {
+            Toastify({
+                text: "La contraseña debe tener al menos 7 caracteres",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
             return;
         }
 
@@ -18,11 +43,33 @@ if (btnLogIn) {
         let usuarioEncontrado = usuarios.find(u => u.email === loginEmail.value && u.password === loginPassword.value);
 
         if (usuarioEncontrado) {
-            alert("Login correcto");
+            Toastify({
+                text: "Sesion iniciada correctamente",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
             guardarUsuarioActual(usuarioEncontrado);
-            window.location.href = "../index.html";
+            setTimeout(() => {
+                window.location.href = "../index.html";
+            }, 1500);
         } else {
-            alert("Datos incorrectos");
+            Toastify({
+                text: "Datos incorrectos",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
         }
     });
 }
@@ -31,7 +78,7 @@ if (btnLogIn) {
 let usuarioActual = obtenerUsuarioActual();
 
 // mostrar usuario logueado
-if(usuarioActual){
+if (usuarioActual) {
     nombreLogIn.textContent = "Bienvenido " + usuarioActual.email;
 }
 

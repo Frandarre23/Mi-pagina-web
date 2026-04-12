@@ -22,8 +22,33 @@ if (btnRegistro) {
 
         e.preventDefault();
 
-        if (!email.value || !password.value) {
-            alert("Completa todos los campos");
+        if (!email.value.includes("@")) {
+            Toastify({
+                text: "Email invalido",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
+            return;
+        }
+
+        if (password.value.length < 7) {
+            Toastify({
+                text: "La contraseña debe tener al menos 7 caracteres",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
             return;
         }
 

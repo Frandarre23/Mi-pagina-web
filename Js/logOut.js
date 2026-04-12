@@ -23,6 +23,37 @@ if (btnLogout) {
 // logout
 function logout() {
     localStorage.removeItem("usuarioActual");
-    alert("Sesión cerrada");
-    window.location.href = "../pages/login.html";
+    Toastify({
+        text: "Sesion cerrada correctamente",
+        duration: 1500,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+            background: "#27ae60",
+        }
+    }).showToast();
+
+    setTimeout(() => {
+        actualizarHeader();
+    }, 1500);
 }
+
+function actualizarHeader() {
+
+    let usuarioActual = obtenerUsuarioActual();
+
+    let nombre = document.querySelector("#usuarioLogueado");
+    let btnLogout = document.querySelector("#btnLogout");
+
+    if (usuarioActual) {
+        if (nombre) nombre.textContent = "Hola " + usuarioActual.email;
+        if (btnLogout) btnLogout.style.display = "block";
+    } else {
+        if (nombre) nombre.textContent = "";
+        if (btnLogout) btnLogout.style.display = "none";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", actualizarHeader);

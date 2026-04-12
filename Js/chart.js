@@ -9,7 +9,17 @@ let users = obtenerUser();
 function agregarAlCarrito(nombre, precio) {
 
     if (!usuarioActual) {
-        alert("Primero debe iniciar sesion");
+        Toastify({
+                text: "Primero debes iniciar sesión",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
         window.location.href = "login.html";
         return;
     }

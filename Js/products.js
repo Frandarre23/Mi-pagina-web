@@ -6,9 +6,61 @@ document.addEventListener("click", (e) => {
         let nombre = e.target.dataset.nombre;
         let precio = parseInt(e.target.dataset.precio);
 
-        agregarAlCarrito(nombre, precio);
+        agregarAlCarrito(nombre, precio,);
+        actualizarContadorCarrito();
     }
 });
+
+function agregarAlCarrito(nombre, precio, imagen) {
+
+    let usuarioActual = obtenerUsuarioActual();
+    let usuarios = obtenerUser();
+
+    if (!usuarioActual) {
+        Toastify({
+            text: "Primero debes iniciar sesión",
+            duration: 1500,
+            gravity: "top",
+            position: "right",
+            style: {
+                background: "#e74c3c",
+            }
+        }).showToast();
+
+        window.location.href = "login.html";
+        return;
+    }
+
+    let user = usuarios.find(u => u.email === usuarioActual.email);
+
+    let existente = user.carrito.find(p => p.nombre === nombre);
+
+    if (existente) {
+        existente.cantidad++;
+    } else {
+        user.carrito.push({
+            nombre,
+            precio,
+            imagen,
+            cantidad: 1
+        });
+    }
+
+    guardarUser(usuarios);
+    guardarUsuarioActual(user);
+
+    Toastify({
+        text: "Producto agregado al carrito",
+        duration: 1500,
+        gravity: "top",
+        position: "right",
+        style: {
+            background: "#27ae60",
+        }
+    }).showToast();
+
+    actualizarContadorCarrito();
+}
 
 async function cargarProductos() {
 
@@ -17,7 +69,7 @@ async function cargarProductos() {
         let res = await fetch("https://sheetdb.io/api/v1/ers2l3iahuwip");
 
         if (!res.ok) {
-            throw new error("Error en la API");
+            throw new Error("Error en la API");
         }
 
         let productos = await res.json();
@@ -60,21 +112,6 @@ function renderCategoria(productos, categoria, selector) {
         </button>
     </div>
 `).join("");
-    /*filtrados.forEach(prod => {
-
-        container.innerHTML += `
-            <div class="producto">
-                <img src="${prod.imagen}" alt="${prod.nombre}">
-                <p>$${prod.precio}</p>
-
-                <button class="btn-agregar"
-                    data-nombre="${prod.nombre}"
-                    data-precio="${parseInt(prod.precio)}">
-                    Agregar
-                </button>
-            </div>
-        `;
-    });*/
 }
 
 cargarProductos();
@@ -95,5 +132,3 @@ if (!localStorage.getItem("promoMostrada")) {
 
     localStorage.setItem("promoMostrada", "true");
 }
-
-localStorage.removeItem("promoMostrada");

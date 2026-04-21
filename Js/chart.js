@@ -10,16 +10,16 @@ function agregarAlCarrito(nombre, precio) {
 
     if (!usuarioActual) {
         Toastify({
-                text: "Primero debes iniciar sesión",
-                duration: 1500,
-                close: true,
-                gravity: "top",
-                position: "right",
-                stopOnFocus: true,
-                style: {
-                    background: "#27ae60",
-                }
-            }).showToast();
+            text: "Primero debes iniciar sesión",
+            duration: 1500,
+            close: true,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+                background: "#27ae60",
+            }
+        }).showToast();
         window.location.href = "login.html";
         return;
     }
@@ -58,6 +58,8 @@ function mostrarCarrito() {
         alert("Debe iniciar sesion");
         window.location.href = "../pages/login.html"
     }
+
+    if (!container) return;
 
     container.innerHTML = "";
 
@@ -115,6 +117,7 @@ function modificarCarrito(indice, cambio) {
     guardarUsuarioActual(user);
 
     mostrarCarrito();
+    actualizarContadorCarrito();
 }
 
 if (btnVaciar) {
@@ -123,8 +126,17 @@ if (btnVaciar) {
         let user = users.find(u => u.email === usuarioActual.email);
 
         if (user.carrito.length === 0) {
-            alert("El carrito ya está vacío");
-            return;
+            Toastify({
+                text: "El carrito se vacio correctamente",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
         }
 
         user.carrito = [];
@@ -132,21 +144,22 @@ if (btnVaciar) {
         guardarUser(users);
         guardarUsuarioActual(user);
 
-        if(user.carrito.length > 0){
-          Toastify({
-            text: "Carrito vaciado",
-            duration: 3000,
-            close: true,
-            gravity: "top",
-            position: "right",
-            stopOnFocus: true,
-            style: {
-                background: "#27ae60",
-            }
-        }).showToast();  
+        if (user.carrito.length > 0) {
+            Toastify({
+                text: "Carrito vaciado",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
         }
 
         mostrarCarrito();
+        actualizarContadorCarrito();
     });
 }
 
@@ -185,4 +198,5 @@ document.addEventListener("click", (e) => {
     guardarUsuarioActual(user);
 
     mostrarCarrito();
+    actualizarContadorCarrito();
 });

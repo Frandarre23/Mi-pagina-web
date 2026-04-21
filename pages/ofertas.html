@@ -42,7 +42,9 @@
             <a href="./register.html" class="btn-click-anim" title="registrate"><img src="../imagenes/persona.png"
                     alt="registrate" class="icono-header"></a>
             <a href="../compra/carrito.html" class="btn-click-anim" title="carrito"><img src="../imagenes/carrito.png"
-                    alt="carrito" class="icono-header"></a>
+                    alt="carrito" class="icono-header">
+                <span id="contadorCarrito">0</span>
+            </a>
             <input type="text" name="buscar" id="buscar">
         </div>
 
@@ -101,23 +103,25 @@
                     <img src="../imagenes/Proteinas.webp" alt="Proteina star">
                     <p>$45.000,00</p>
                     <button class="btn-agregar" data-nombre="2x1 Proteina star nutricion" data-precio="45000">
-                    Agregar
+                        Agregar
                     </button>
                 </div>
                 <div>
                     <h3 class="categorias-titulo"> Whey Protein 2lbs + Creatina Micronizada Ena</h3>
                     <img src="../imagenes/Proteycrea.webp" alt="ProteyCrea">
                     <p>$68.500,00</p>
-                    <button class="btn-agregar" data-nombre="Whey Protein 2lbs + Creatina Micronizada Ena" data-precio="68500">
-                    Agregar
+                    <button class="btn-agregar" data-nombre="Whey Protein 2lbs + Creatina Micronizada Ena"
+                        data-precio="68500">
+                        Agregar
                     </button>
                 </div>
                 <div>
                     <h3 class="categorias-titulo">Combo Volumen Whey Proteina Truemade + Bcaa + Creatina Ena</h3>
                     <img src="../imagenes/Protecreabbcs.webp" alt="protecreabcaa">
                     <p>$70.500,00</p>
-                    <button class="btn-agregar" data-nombre="Whey Proteina Truemade + Bcaa + Creatina Ena" data-precio="70500">
-                    Agregar
+                    <button class="btn-agregar" data-nombre="Whey Proteina Truemade + Bcaa + Creatina Ena"
+                        data-precio="70500">
+                        Agregar
                     </button>
                 </div>
             </article>
@@ -127,28 +131,28 @@
                     <img src="../imagenes/Mediasinvisibles.webp" alt="medias invisibles">
                     <p>$15.000,00</p>
                     <button class="btn-agregar" data-nombre="Medias invisibles" data-precio="15000">
-                    Agregar
+                        Agregar
                     </button>
                 </div>
                 <div>
                     <img src="../imagenes/Mediasaltas.webp" alt="medias estilo  3/4">
                     <p>$12.000,00</p>
                     <button class="btn-agregar" data-nombre="Medias 3/4" data-precio="12000">
-                    Agregar
+                        Agregar
                     </button>
                 </div>
                 <div>
                     <img src="../imagenes/Mediasbasicas.webp" alt="medias basicas">
                     <p>$17.000</p>
                     <button class="btn-agregar" data-nombre="Medias basicas" data-precio="17000">
-                    Agregar
+                        Agregar
                     </button>
                 </div>
                 <div>
                     <img src="../imagenes/Mediascomunes.webp" alt="medias comunes">
                     <p>$13.000</p>
                     <button class="btn-agregar" data-nombre="Medias comunes" data-precio="13000">
-                    Agregar
+                        Agregar
                     </button>
                 </div>
 
@@ -252,6 +256,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.24/dist/sweetalert2.all.min.js"></script>
     <!-- JS -->
     <script src="../Js/storage.js"></script>
+    <script src="../Js/ui.js"></script>
     <script src="../Js/products.js"></script>
     <script src="../Js/chart.js"></script>
 </body>

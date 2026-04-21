@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "2x1 Proteina Star Nutricion",
+    "precio": 45000,
+    "imagen": "../imagenes/Proteinas.webp",
+    "categoria": "suplementacion"
+  },
+  {
+    "nombre": "Whey Protein 2lbs + Creatina Micronizada Ena",
+    "precio": 68500,
+    "imagen": "../imagenes/Proteycrea.webp",
+    "categoria": "suplementacion"
+  },
+  {
+    "nombre": "Combo Volumen Whey Proteina Truemade + Bcaa + Creatina Ena",
+    "precio": 70500,
+    "imagen": "../imagenes/Protecreabbcs.webp",
+    "categoria": "suplementacion"
+  },
+  {
+    "nombre": "Medias invisibles",
+    "precio": 15000,
+    "imagen": "../imagenes/Mediasinvisibles.webp",
+    "categoria": "medias"
+  },
+  {
+    "nombre": "Medias 3/4",
+    "precio": 12000,
+    "imagen": "../imagenes/Mediasaltas.webp",
+    "categoria": "medias"
+  },
+  {
+    "nombre": "Medias basicas",
+    "precio": 17000,
+    "imagen": "../imagenes/Mediasbasicas.webp",
+    "categoria": "medias"
+  },
+  {
+    "nombre": "Medias comunes",
+    "precio": 13000,
+    "imagen": "../imagenes/Mediascomunes.webp",
+    "categoria": "medias"
+  }
+]

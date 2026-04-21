@@ -56,7 +56,17 @@ if (btnRegistro) {
         let existe = usuarios.find(u => u.email === email.value)
 
         if (existe) {
-            alert("Este usuario ya existe en laa pagina")
+            Toastify({
+                text: "Este usuario ya existe en la pagina",
+                duration: 1500,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "#27ae60",
+                }
+            }).showToast();
             return;
         } else {
             let nuevoUser = new Usuario(email.value, password.value);

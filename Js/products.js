@@ -6,61 +6,10 @@ document.addEventListener("click", (e) => {
         let nombre = e.target.dataset.nombre;
         let precio = parseInt(e.target.dataset.precio);
 
-        agregarAlCarrito(nombre, precio,);
+        agregarAlCarrito(nombre, precio);
         actualizarContadorCarrito();
     }
 });
-
-function agregarAlCarrito(nombre, precio, imagen) {
-
-    let usuarioActual = obtenerUsuarioActual();
-    let usuarios = obtenerUser();
-
-    if (!usuarioActual) {
-        Toastify({
-            text: "Primero debes iniciar sesión",
-            duration: 1500,
-            gravity: "top",
-            position: "right",
-            style: {
-                background: "#e74c3c",
-            }
-        }).showToast();
-
-        window.location.href = "login.html";
-        return;
-    }
-
-    let user = usuarios.find(u => u.email === usuarioActual.email);
-
-    let existente = user.carrito.find(p => p.nombre === nombre);
-
-    if (existente) {
-        existente.cantidad++;
-    } else {
-        user.carrito.push({
-            nombre,
-            precio,
-            imagen,
-            cantidad: 1
-        });
-    }
-
-    guardarUser(usuarios);
-    guardarUsuarioActual(user);
-
-    Toastify({
-        text: "Producto agregado al carrito",
-        duration: 1500,
-        gravity: "top",
-        position: "right",
-        style: {
-            background: "#27ae60",
-        }
-    }).showToast();
-
-    actualizarContadorCarrito();
-}
 
 async function cargarProductos() {
 
